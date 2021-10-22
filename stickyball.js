@@ -1294,7 +1294,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     this.nodes[t].angle = link.angle()-this.angle 
                     this.nodes[t].active = 1
                     this.nodes[t].nodmark = 1
-                    // this.nodes[t].color = "blue"
+                    this.nodes[t].color = "blue"
                 }
             }
             for(let t = 0;t<this.nodes.length;t++){
@@ -1308,7 +1308,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         this.nodes[t].angle = link.angle()-this.angle 
                         this.nodes[t].active = 1
                         this.nodes[t].nodmark = 1
-                        // this.nodes[t].color = "blue"
+                        this.nodes[t].color = "blue"
                     }
                 }
             }
@@ -1391,7 +1391,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let floors = []
     let ramps = []
     for(let t = 0;t<32;t++){
-        let floor = new Rectangle(t*40, 500+((Math.cos(t/10))*10), 40, 100, "white")
+        let floor = new Rectangle(t*40, 500+((Math.cos(t*0))*10), 40, 500, "white")
         floors.push(floor)
     }
     // let floor2 = new Rectangle(720, 480, 720, 520, "white")
